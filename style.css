@@ -1,0 +1,81 @@
+body {
+  background: #f5f5f0;
+  color: black;
+  font-family: Monaco;
+}
+
+.list-movies-title {
+  padding: 10px 0;
+  background: #009b50;
+  color: white;
+  text-align: center;
+  font-size: 16pt;
+}
+
+.movie-grid {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px;
+  justify-content: center;
+}
+
+.movie-grid li {
+  padding: 10px 10px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: white;
+  text-align: center;
+}
+
+.movie {
+  width: 140px;
+}
+
+img {
+  border-radius: 10px;
+}
+
+.movie-title,
+.movie-year {
+  font-size: 0.8em;
+  text-align: center;
+}
+
+.movie-title {
+  margin-top: 10px;
+}
+
+.movie-year {
+  color: #999;
+}
+
+.movie-poster {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  width: 128px;
+  height: 193px;
+}
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (min-width: 576px) {
+}
+
+/*  Small devices (landscape phones, less than 768px) */
+@media (min-width: 768px) {
+  .movie-grid {
+    grid-template-columns: auto auto auto;
+  }
+}
+
+/*  Medium devices (tablets, less than 992px) */
+@media (min-width: 992px) {
+  .movie-grid {
+    grid-template-columns: auto auto auto auto;
+  }
+}
+
+@media (min-width: 1200px) {
+}
